@@ -8,4 +8,6 @@
     <string name="stats">Estadísticas</string>
     <string name="settings">Ajustes</string>
     <string name="about">Acerca de...</string>
+    <string name="CharactersTitle">Personajes</string>
+    <string name="seen">Visto</string>
 </resources>
