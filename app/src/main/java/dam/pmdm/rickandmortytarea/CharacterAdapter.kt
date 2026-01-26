@@ -34,16 +34,7 @@ class CharacterAdapter(private var characters:List<Character>): RecyclerView.Ada
     inner class CharacterViewHolder(private val binding: ItemCharacterBinding): RecyclerView.ViewHolder(binding.root){
         fun bind(character: Character){
             binding.tvCharacterName.text = character.name
-            binding.ivCharacter.load(character.image) {
-                placeholder(R.drawable.ic_launcher_background)
-                error(R.drawable.ic_launcher_background)
-                listener(
-                    onError = { _, result ->
-                        android.util.Log.e("COIL", "Fallo cargando: ${character.image}", result.throwable)
-                    }
-                )
-            }
-//            binding.ivCharacter.load(character.image)
+            binding.ivCharacter.load(character.image)
         }
     }
 }
