@@ -1,15 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".StatsFragment">
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/tvTotal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="STATS"
-        android:textSize="40sp"/>
+        android:layout_height="wrap_content"
+        android:text="Total episodios: 0"
+        android:textSize="18sp"
+        android:padding="8dp"/>
 
-</FrameLayout>
+    <TextView
+        android:id="@+id/tvSeen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vistos: 0"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+
+    <TextView
+        android:id="@+id/tvPercent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Progreso: 0%"
+        android:textSize="18sp"
+        android:padding="8dp"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:max="100"
+        android:layout_marginTop="12dp"/>
+</LinearLayout>

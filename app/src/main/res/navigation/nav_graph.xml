@@ -8,26 +8,26 @@
     <fragment
         android:id="@+id/episodesFragment"
         android:name="dam.pmdm.rickandmortytarea.EpisodesFragment"
-        android:label="fragment_episodes"
+        android:label="Episodios"
         tools:layout="@layout/fragment_episodes" />
     <fragment
         android:id="@+id/statsFragment"
         android:name="dam.pmdm.rickandmortytarea.StatsFragment"
-        android:label="fragment_stats"
+        android:label="Estadísticas"
         tools:layout="@layout/fragment_stats" />
     <fragment
         android:id="@+id/settingsFragment"
         android:name="dam.pmdm.rickandmortytarea.SettingsFragment"
-        android:label="fragment_settings"
+        android:label="Ajustes"
         tools:layout="@layout/fragment_settings" />
     <fragment
         android:id="@+id/aboutDialog"
         android:name="dam.pmdm.rickandmortytarea.AboutDialog"
-        android:label="fragment_about_dialog"
+        android:label="Acerca de"
         tools:layout="@layout/fragment_about_dialog" />
     <fragment
         android:id="@+id/episodeDetailFragment"
         android:name="dam.pmdm.rickandmortytarea.EpisodeDetailFragment"
-        android:label="fragment_episode_detail"
+        android:label="Detalles"
         tools:layout="@layout/fragment_episode_detail" />
 </navigation>

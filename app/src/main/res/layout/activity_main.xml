@@ -17,8 +17,9 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
+            android:paddingTop="15dp"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            app:titleTextColor="@android:color/white"/>
+            app:titleTextColor="?attr/colorOnPrimary"/>
 
 
         <androidx.fragment.app.FragmentContainerView

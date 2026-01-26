@@ -2,9 +2,44 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.RickAndMortyTarea" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/neo_green</item>
+        <item name="colorOnPrimary">@color/deep_blue</item>
+        <item name="colorPrimaryContainer">@color/neo_green</item>
     </style>
 
     <style name="Theme.RickAndMortyTarea" parent="Base.Theme.RickAndMortyTarea" />
+
+<!--estilo item_episode-->
+    <style name="itemEpisode">
+    <item name="android:backgroundTint">@color/neo_green</item>
+    <item name="android:textColor">@color/deep_blue</item>
+    <item name="android:layout_marginVertical">2dp</item>
+    <item name="android:layout_marginHorizontal">4dp</item>
+    </style>
+
+    <style name="backgroundExterno">
+        <item name="android:background">@color/yellow</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="backgroundIntermedio">
+        <item name="android:backgroundTint">@color/deep_blue</item>
+    </style>
+
+    <style name="backgroundInterno">
+        <item name="android:background">@color/neo_green</item>
+    </style>
+
+<!--    estilo del grupo botón de filtrado-->
+    <style name="backgroundButtom">
+        <item name="android:backgroundTint">@color/neo_green</item>
+        <item name="android:textColor">@color/deep_blue</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+<!--    estilo botón individual filtrado-->
+    <style name="backgroundButtomGroup">
+        <item name="android:background">@color/deep_blue2</item>
+        <item name="android:padding">2dp</item>
+    </style>
 
 </resources>

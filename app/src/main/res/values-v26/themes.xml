@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="itemEpisode">
+        <item name="android:backgroundTint">@color/neo_green</item>
+        <item name="android:textColor">@color/deep_blue</item>
+        <item name="android:layout_marginVertical">2dp</item>
+        <item name="android:layout_marginHorizontal">4dp</item>
+    </style>
+</resources>

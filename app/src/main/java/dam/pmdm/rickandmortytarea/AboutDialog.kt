@@ -1,20 +1,23 @@
 package dam.pmdm.rickandmortytarea
 
+import android.app.Dialog
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import androidx.fragment.app.DialogFragment
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 
-class AboutDialog : Fragment() {
+class AboutDialog : DialogFragment() {
 
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_about_dialog, container, false)
+    override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
+        val versionName = requireContext()
+            .packageManager
+            .getPackageInfo(requireContext().packageName, 0)
+            .versionName
+
+        return MaterialAlertDialogBuilder(requireContext())
+            .setTitle("Acerca de")
+            .setMessage("Desarrollador: Alejandro Tinedo Requesens\nVersión: $versionName")
+            .setPositiveButton("OK", null)
+            .create()
     }
-
 }

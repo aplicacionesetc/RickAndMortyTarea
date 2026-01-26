@@ -38,6 +38,12 @@ class EpisodeAdapter(private var episodes : List<Episode>, private val onClick:(
             binding.tvCode.text = episode.episode
             binding.tvDate.text = episode.air_date
 
+            // verificamos el id del episodio para ver si ha sido visto
+            val isSeen = SeenPrefs.isSeen(binding.root.context, episode.id)
+            // si es así, oscurecemos el episodio como "visto"
+            binding.root.alpha = if (isSeen) 0.5f else 1.0f
+
+
             // hacer click en cada episodio indivualmente
             binding.root.setOnClickListener {
                 onClick(episode)

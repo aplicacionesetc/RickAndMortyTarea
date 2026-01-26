@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/yellow"
-    android:padding="16dp">
+    style="@style/backgroundExterno">
 
     <TextView
         android:id="@+id/tvTitle"
@@ -14,18 +13,18 @@
         android:gravity="center"
         android:textSize="30sp"
         android:textStyle="bold"
-        tools:text="Nombre episodio" />
+        tools:text="Nombre_episodio" />
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:backgroundTint="@color/deep_blue"
+        style="@style/backgroundIntermedio"
         android:layout_marginTop="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/neo_green"
+            style="@style/backgroundInterno"
             android:layout_margin="8dp"
             android:gravity="center"
             android:orientation="vertical">
@@ -62,7 +61,7 @@
         android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="32dp"
-        android:backgroundTint="@color/deep_blue"
+        style="@style/backgroundIntermedio"
         android:layout_weight="1">
 
         <LinearLayout
@@ -76,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:text="@string/CharactersTitle"
-                android:background="@color/neo_green"
+                style="@style/backgroundInterno"
                 android:textSize="26sp"
                 android:textStyle="bold" />
 
@@ -84,7 +83,7 @@
                 android:id="@+id/rvCharacters"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:background="@color/neo_green"
+                style="@style/backgroundInterno"
                 android:layout_weight="1" />
         </LinearLayout>
 

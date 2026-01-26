@@ -30,6 +30,13 @@ class EpisodeDetailFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val episodeId = requireArguments().getInt("episode_id")
+        // estado inicial
+        binding.sVisto.isChecked = SeenPrefs.isSeen(requireContext(), episodeId)
+
+        // guardar cuando cambie
+        binding.sVisto.setOnCheckedChangeListener { _, isChecked ->
+            SeenPrefs.setSeen(requireContext(), episodeId, isChecked)
+        }
 
         // RecyclerView de los personajes
         characterAdapter = CharacterAdapter(emptyList())
@@ -49,6 +56,7 @@ class EpisodeDetailFragment : Fragment() {
                     characterAdapter.updateList(characters)
                 }
         }
+
     }
 
     private fun extractCharacterIds(urls: List<String>): String {

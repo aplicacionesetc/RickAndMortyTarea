@@ -17,8 +17,14 @@ class EpisodesFragment : Fragment() {
     private lateinit var adapter: EpisodeAdapter
     private val episodesViewModel: EpisodeViewModel by viewModels()
     private var allEpisodes: List<Episode> = emptyList()
-    private val seenSet:MutableSet<String> = mutableSetOf()
+    private var seenSet:Set<String> = emptySet()
 
+    override fun onResume() {
+        super.onResume()
+        // recargar vistos al volver del detalle
+        seenSet = SeenPrefs.getSeenSet(requireContext())
+        applyFilter(binding.tgFilter.checkedButtonId)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -43,6 +49,7 @@ class EpisodesFragment : Fragment() {
 
         binding.rvEpisodes.layoutManager = LinearLayoutManager(requireContext())
 
+        seenSet = SeenPrefs.getSeenSet(requireContext())
         binding.tgFilter.check(R.id.btnAll)
 
         binding.tgFilter.addOnButtonCheckedListener { _, checkedId, isCheked ->
@@ -64,7 +71,7 @@ class EpisodesFragment : Fragment() {
     // funcion para filtrar los episodios
     private fun applyFilter(checkedId:Int) {
         val filtered = when(checkedId){
-            R.id.btnSeen -> allEpisodes.filter{seenSet.contains(it.episode)}
+            R.id.btnSeen -> allEpisodes.filter{seenSet.contains(it.id.toString())}
             R.id.btnAll, View.NO_ID -> allEpisodes
             else -> allEpisodes
         }
