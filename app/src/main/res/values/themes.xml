@@ -64,4 +64,16 @@
         <item name="android:layout_marginHorizontal">30dp</item>
         <item name="android:layout_marginBottom">10dp</item>
     </style>
+
+<!--    estilo stats fragment-->
+
+    <style name="statsFragmentText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/deep_blue</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@color/neo_green</item>
+    </style>
+
 </resources>
