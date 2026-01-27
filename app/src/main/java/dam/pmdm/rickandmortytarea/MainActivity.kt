@@ -76,12 +76,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-
-//        binding.navView.setNavigationItemSelectedListener { menuItem ->
-//            val handled = NavigationUI.onNavDestinationSelected(menuItem, navController)
-//            if (handled) binding.drawerLayout.closeDrawers()// Cerrar el menú
-//            handled
-//        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
