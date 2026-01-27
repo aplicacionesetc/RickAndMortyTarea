@@ -1,13 +1,20 @@
 <resources>
     <string name="app_name">RickAndMortyTarea</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="open_drawer">Abrir menú</string>
     <string name="close_drawer">Cerrar menú</string>
     <string name="episodes">Episodios</string>
     <string name="stats">Estadísticas</string>
-    <string name="settings">Ajustes</string>
     <string name="about">Acerca de...</string>
+    <string name="settings">Ajustes</string>
     <string name="CharactersTitle">Personajes</string>
     <string name="seen">Visto</string>
+
+
+    <string name="aboutDialogTitle">Acerca de</string>
+    <string name="aboutDialogDeveloper">Desarrollador: \nAlejandro Tinedo Requesens</string>
+    <string name="aboutDialogButtom">Cerrar</string>
+    <string name="aboutDialogVersion">Versión: 1.0.0</string>
+
 </resources>

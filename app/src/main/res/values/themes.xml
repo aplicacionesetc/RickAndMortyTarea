@@ -4,7 +4,7 @@
         <!-- Customize your light theme here. -->
         <item name="colorPrimary">@color/neo_green</item>
         <item name="colorOnPrimary">@color/deep_blue</item>
-        <item name="colorPrimaryContainer">@color/neo_green</item>
+        <item name="colorPrimaryContainer">@color/deep_blue</item>
     </style>
 
     <style name="Theme.RickAndMortyTarea" parent="Base.Theme.RickAndMortyTarea" />
@@ -41,5 +41,27 @@
         <item name="android:background">@color/deep_blue2</item>
         <item name="android:padding">2dp</item>
     </style>
+<!--estilo about dialog -->
+    <style name="aboutDialogTitle">
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/deep_blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 
+    <style name="aboutDialogText">
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/deep_blue</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="aboutDialogButtom">
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/deep_blue</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginHorizontal">30dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
 </resources>

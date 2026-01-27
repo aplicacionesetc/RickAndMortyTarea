@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var navController: NavController
     private lateinit var toggle: ActionBarDrawerToggle
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
@@ -60,6 +59,29 @@ class MainActivity : AppCompatActivity() {
     private fun configureNavigation() {
         // esto hace que al pulsar el menú se navegue al destino con el mismo id
         NavigationUI.setupWithNavController(binding.navView, navController)
+
+        binding.navView.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.aboutDialog -> {
+                    AboutDialog().show(supportFragmentManager, "about")
+                    binding.drawerLayout.closeDrawers()
+                    true
+                }
+
+                else -> {
+                    NavigationUI.onNavDestinationSelected(menuItem, navController)
+                    binding.drawerLayout.closeDrawers()
+                    true
+                }
+            }
+        }
+
+
+//        binding.navView.setNavigationItemSelectedListener { menuItem ->
+//            val handled = NavigationUI.onNavDestinationSelected(menuItem, navController)
+//            if (handled) binding.drawerLayout.closeDrawers()// Cerrar el menú
+//            handled
+//        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

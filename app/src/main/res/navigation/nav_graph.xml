@@ -20,14 +20,14 @@
         android:name="dam.pmdm.rickandmortytarea.SettingsFragment"
         android:label="Ajustes"
         tools:layout="@layout/fragment_settings" />
-    <fragment
-        android:id="@+id/aboutDialog"
-        android:name="dam.pmdm.rickandmortytarea.AboutDialog"
-        android:label="Acerca de"
-        tools:layout="@layout/fragment_about_dialog" />
+<!--    <dialog-->
+<!--        android:id="@+id/aboutDialog"-->
+<!--        android:name="dam.pmdm.rickandmortytarea.AboutDialog"-->
+<!--        android:label="Acerca de"/>-->
     <fragment
         android:id="@+id/episodeDetailFragment"
         android:name="dam.pmdm.rickandmortytarea.EpisodeDetailFragment"
         android:label="Detalles"
         tools:layout="@layout/fragment_episode_detail" />
+
 </navigation>
