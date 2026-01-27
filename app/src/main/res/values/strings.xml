@@ -16,5 +16,10 @@
     <string name="aboutDialogDeveloper">Desarrollador: \nAlejandro Tinedo Requesens</string>
     <string name="aboutDialogButtom">Cerrar</string>
     <string name="aboutDialogVersion">Versión: 1.0.0</string>
+    <string name="dark_mode">Claro</string>
+    <string name="language">ES / EN</string>
+    <string name="language_title">Idioma</string>
+    <string name="theme_title">Tema</string>
+    <string name="close_session">Cerrar sesión</string>
 
 </resources>

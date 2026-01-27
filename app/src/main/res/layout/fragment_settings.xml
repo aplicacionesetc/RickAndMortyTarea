@@ -1,15 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:orientation="vertical"
+    android:padding="35dp"
     tools:context=".SettingsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="SETTINGS"
-        android:textSize="40sp"/>
+        android:layout_height="wrap_content"
+        android:gravity="bottom|center_horizontal"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="@color/deep_blue"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="@string/language_title" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:text="@string/language"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top|center_horizontal"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/deep_blue"
+            android:textSize="30sp"
+            android:layout_weight="1"
+            android:text="@string/theme_title" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="@string/dark_mode"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="0.1">
+
+        <Button
+            android:id="@+id/btnCloseSesion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/deep_blue"
+            android:layout_marginBottom="30dp"
+            android:text="@string/close_session"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</LinearLayout>

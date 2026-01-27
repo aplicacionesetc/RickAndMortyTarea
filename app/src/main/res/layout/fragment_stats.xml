@@ -15,25 +15,25 @@
 
 
         <TextView
-            android:id="@+id/tvTotal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/statsFragmentText"
-            tools:text="Total episodios: 0" />
-
-        <TextView
             android:id="@+id/tvSeen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/statsFragmentText"
-            tools:text="Vistos: 0" />
+            tools:text="Has visto 0" />
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/statsFragmentText"
+            tools:text="de 0 episodios" />
 
         <TextView
             android:id="@+id/tvPercent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/statsFragmentText"
-            tools:text="Progreso: 0%" />
+            tools:text="0% Completado" />
 
         <ProgressBar
             android:id="@+id/progress"

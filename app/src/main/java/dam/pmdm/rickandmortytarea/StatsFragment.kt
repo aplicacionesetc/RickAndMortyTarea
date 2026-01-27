@@ -31,9 +31,9 @@ class StatsFragment : Fragment() {
 
             val percent = if (total == 0) 0 else(seenCount * 100 / total)
 
-            binding.tvTotal.text= "Total episodios: $total"
-            binding.tvSeen.text = "Vistos: $seenCount"
-            binding.tvPercent.text = "Progreso: $percent%"
+            binding.tvSeen.text = "Has visto $seenCount"
+            binding.tvTotal.text= "de $total episodios"
+            binding.tvPercent.text = "$percent%  Completado"
             binding.progress.progress = percent
 
         }
